@@ -734,12 +734,16 @@ $sidebar-display: "sidebar-display";
   }
 
   .nav-item {
-    text-align: center;
+    text-align: left;
     display: table;
     height: $tab-height;
 
     &.active {
       .nav-link {
+	    /* text-indent: -0.2em; */
+		text-decoration: none;
+		display: block;
+	    background-color: rgb(255, 255, 255);
         color: var(--sidebar-active-color);
       }
     }
@@ -844,7 +848,7 @@ $sidebar-display: "sidebar-display";
         color: var(--sidebar-active-color);
       }
     }
-
+	
     .icon-border {
       @extend %no-cursor;
 
@@ -856,6 +860,22 @@ $sidebar-display: "sidebar-display";
     }
 
   } /* .sidebar-bottom */
+  
+  .sidebar-bottom-cc {
+      margin-bottom: 2.1rem;
+	  @include ml-mr(auto);
+      @include pl-pr(1rem);
+
+      %icon {
+        width: 5.8rem;
+        text-align: center;
+      }
+	  
+	  a {
+        @extend %icon;
+        @extend %clickable-transition;
+      }
+    }
 
 } /* #sidebar */
 
