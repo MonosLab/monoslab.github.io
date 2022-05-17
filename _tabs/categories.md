@@ -1,6 +1,6 @@
 ---
 layout: categories
 title: 카테고리
-icon: a
+icon: list
 order: 1
 ---
