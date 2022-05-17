@@ -1,6 +1,6 @@
 ---
 layout: tags
 title: 태그
-icon: ticket
+icon: document
 order: 2
 ---
