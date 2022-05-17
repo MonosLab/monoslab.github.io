@@ -1,7 +1,7 @@
 ---
 layout: archives
 title: 타임라인
-icon: a
+icon: map
 order: 3
 ---
 
