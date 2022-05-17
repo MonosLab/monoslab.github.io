@@ -36,7 +36,7 @@
     <!-- home -->
     <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
       <a href="{{ '/' | relative_url }}" class="nav-link">
-	    <img src="/assets/img/default/home.png" alt="" onerror="this.style.display='none'">
+	    <img src="/assets/img/default/home.png" alt="home" onerror="this.style.display='none'">
         <!--i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i-->
         <span>{{ site.data.locales[lang].tabs.home | upcase }}</span>
       </a>
@@ -45,7 +45,7 @@
     {% for tab in site.tabs %}
     <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
       <a href="{{ tab.url | relative_url }}" class="nav-link">
-	    <img src="/assets/img/default/{{ tab.icon }}.png" alt="" onerror="this.style.display='none'">
+	    <img src="/assets/img/default/{{ tab.icon }}.png" alt="{{ tab.icon }}" onerror="this.style.display='none'">
         <!--i class="fa-fw {{ tab.icon }} ml-xl-3 mr-xl-3 unloaded"></i-->
         {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
 
