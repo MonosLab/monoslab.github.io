@@ -1,6 +1,6 @@
 ---
 title: 정보
-icon: fas fa-info-circle
+icon: a
 order: 4
 ---
 
