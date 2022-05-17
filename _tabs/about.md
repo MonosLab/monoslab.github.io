@@ -1,6 +1,6 @@
 ---
 title: 정보
-icon: receipt
+icon: 
 order: 4
 ---
 
