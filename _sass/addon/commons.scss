@@ -183,6 +183,10 @@ footer {
   .footer-right {
     text-align: right;
   }
+  
+  .footer-left {
+    text-align: left;
+  }
 }
 
 i { /* fontawesome icons */
@@ -862,13 +866,13 @@ $sidebar-display: "sidebar-display";
   } /* .sidebar-bottom */
   
   .sidebar-bottom-cc {
-      margin-bottom: 2.1rem;
+      margin-bottom: 0.1rem;
 	  @include ml-mr(auto);
-      @include pl-pr(1rem);
+      @include pl-pr(auto);
 
       %icon {
         width: 5.8rem;
-        text-align: center;
+        text-align: right;
       }
 	  
 	  a {
@@ -1367,7 +1371,7 @@ $sidebar-display: "sidebar-display";
   }
 
   .profile-wrapper {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   #search-wrapper {

@@ -2,21 +2,18 @@
   The Footer
 -->
 
-<footer class="d-flex w-100 justify-content-center">
-  <div class="d-flex justify-content-between align-items-center text-muted">
+<footer class="d-flex w-100 justify-content-left">
+  <div class="d-flex justify-content-between align-items-left text-muted">
     <div class="footer-left">
       <p class="mb-0">
-        © {{ 'now' | date: "%Y" }}
+        <a href="https://en.wikipedia.org/wiki/Creative_Commons_license" target="_blank"><img width="88" height="31" src="/assets/img/cc_by-nc_icon.png" alt="cc" onerror="this.style.display='none'"></a><br/>
+        ©{{ 'now' | date: "%Y" }}
         <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
         {% if site.data.locales[lang].copyright.brief %}
         <span data-toggle="tooltip" data-placement="top"
           title="{{ site.data.locales[lang].copyright.verbose }}">{{ site.data.locales[lang].copyright.brief }}</span>
         {% endif %}
-      </p>
-    </div>
-
-    <div class="footer-right">
-      <p class="mb-0">
+		<br/>
         {% capture _platform %}
           <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
         {% endcapture %}
@@ -29,7 +26,6 @@
           | default: 'Powered by :PLATFORM with :THEME theme.'
           | replace: ':PLATFORM', _platform | replace: ':THEME', _theme
         }}
-
       </p>
     </div>
 
