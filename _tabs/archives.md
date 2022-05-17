@@ -1,7 +1,7 @@
 ---
 layout: archives
 title: 타임라인
-icon: map
+icon: puzzle
 order: 3
 ---
 
