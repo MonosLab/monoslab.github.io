@@ -1,6 +1,6 @@
 ---
 title: 정보
-icon: 
+icon: about
 order: 4
 ---
 
