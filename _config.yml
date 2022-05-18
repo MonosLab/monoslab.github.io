@@ -9,7 +9,8 @@ tagline: Season 1
 description: >-                         # used by seo meta and the atom feed
   Developer site
 url: 'https://monoslab.github.io'
-
+plugins:
+  - jekyll-sitemap
 github:
   username: monoslab                    # change to your github username
 

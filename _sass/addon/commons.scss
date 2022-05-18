@@ -734,15 +734,20 @@ $sidebar-display: "sidebar-display";
     font-weight: 600;
 	text-indent: 0.5em;
     letter-spacing: 0.5px;
-    display: flex; /* table-cell; */
+    display: table-cell;
     vertical-align: middle;
-	align-items:center;
   }
 
   .nav-item {
     text-align: left;
     display: table;
     height: $tab-height;
+	
+	> a {
+	  display: flex;
+	  vertical-align: middle;
+	  align-items:center;
+	}
 	
     &.active {
       .nav-link {
