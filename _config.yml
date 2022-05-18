@@ -7,7 +7,7 @@ timezone: Asia/Shanghai
 title: MonosLab
 tagline: Season 1
 description: >-                         # used by seo meta and the atom feed
-  Developer site
+  Make Over Number One
 url: 'https://monoslab.github.io'
 plugins:
   - jekyll-sitemap
