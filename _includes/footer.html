@@ -5,8 +5,10 @@
 <footer class="d-flex w-100 justify-content-left">
   <div class="d-flex justify-content-between align-items-left text-muted">
     <div class="footer-left">
+	  <p class="mb-1">
+	    <a href="https://en.wikipedia.org/wiki/Creative_Commons_license" target="_blank"><img width="88" height="31" src="/assets/img/cc_by-nc_icon.png" alt="cc" onerror="this.style.display='none'"></a>
+	  </p>
       <p class="mb-0">
-        <a href="https://en.wikipedia.org/wiki/Creative_Commons_license" target="_blank"><img width="88" height="31" src="/assets/img/cc_by-nc_icon.png" alt="cc" onerror="this.style.display='none'"></a><br/>
         ©{{ 'now' | date: "%Y" }}
         <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
         {% if site.data.locales[lang].copyright.brief %}
@@ -28,6 +30,5 @@
         }}
       </p>
     </div>
-
   </div> <!-- div.d-flex -->
 </footer>

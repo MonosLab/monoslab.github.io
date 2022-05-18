@@ -1,6 +1,6 @@
 ---
 layout: tags
 title: 태그
-icon: document
+icon: tags
 order: 2
 ---

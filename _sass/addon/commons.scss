@@ -732,21 +732,22 @@ $sidebar-display: "sidebar-display";
     border-radius: 0;
     font-size: 0.95rem;
     font-weight: 600;
-    letter-spacing: 1px;
-    display: table-cell;
+	text-indent: 0.5em;
+    letter-spacing: 0.5px;
+    display: flex; /* table-cell; */
     vertical-align: middle;
+	align-items:center;
   }
 
   .nav-item {
     text-align: left;
     display: table;
     height: $tab-height;
-
+	
     &.active {
       .nav-link {
 	    /* text-indent: -0.2em; */
 		text-decoration: none;
-		display: block;
 	    background-color: rgb(255, 255, 255);
         color: var(--sidebar-active-color);
       }
@@ -764,7 +765,7 @@ $sidebar-display: "sidebar-display";
 
     li {
       width: 100%;
-
+		
       &:last-child {
         a {
           position: relative;
@@ -777,8 +778,8 @@ $sidebar-display: "sidebar-display";
           visibility: hidden;
           content: "";
           position: relative;
-          right: 1px;
-          width: $cursor-width * 2;
+          right: 2px;
+          width: $cursor-width;
           height: $tab-cursor-height;
           border-radius: 5px;
           background-color: rgba(255, 178, 0, 1); /*var(--nav-cursor-color);*/
@@ -1665,9 +1666,13 @@ $sidebar-display: "sidebar-display";
 
         .nav-link {
           > span {
-            letter-spacing: 2px;
+            letter-spacing: 5px;
           }
-
+		  
+		  > img {
+		    margin-left: 0 !important;
+		  }
+		  
           > i {
             &.unloaded {
               display: inline-block !important;
