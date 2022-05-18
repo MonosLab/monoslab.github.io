@@ -2,6 +2,6 @@
 layout: archives
 title: 타임라인
 icon: archives
-order: 3
+order: 2
 ---
 
