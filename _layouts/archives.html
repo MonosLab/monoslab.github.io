@@ -14,7 +14,13 @@ layout: page
 {% endif %}
 
 <div id="archives" class="pl-xl-2">
-{% for post in site.posts %}
+{% assign data = "" | split: ',' %}
+{% for item in site.posts %}
+  {% if item.sub == 'post' %}
+    {% assign data = data | push: item %}
+  {% endif %}
+{% endfor %}
+{% for post in data %}
   {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
   {% capture pre_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
   {% if forloop.first %}
