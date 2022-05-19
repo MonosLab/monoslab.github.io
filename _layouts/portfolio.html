@@ -35,7 +35,7 @@ layout: page
         <span class="date day" data-ts="{{ ts }}" data-df="DD">
           {{ post.date | date: "%d" }}
         </span>
-        <span class="date month small text-muted" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
+        <span class="date month text-muted" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
           {{ post.date | date: df_strftime_m }}
         </span>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
