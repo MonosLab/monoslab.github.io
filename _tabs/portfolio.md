@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: 포트폴리오
+title: 주요 경력
 icon: portfolio
 order: 5
 ---

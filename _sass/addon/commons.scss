@@ -1089,7 +1089,8 @@ $sidebar-display: "sidebar-display";
 
   .categories,
   #tags,
-  #archives {
+  #archives,
+  #portfolio {
     a:not(:hover) {
       @extend %no-bottom-border;
     }
