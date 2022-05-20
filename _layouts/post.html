@@ -11,6 +11,14 @@ tail_includes:
 
 {% include lang.html %}
 
+{% if page.sub == 'portfolio' %}
+
+<div class="post-content">
+  {{ content }}
+</div>
+
+{% else %}
+
 <h1 data-toc-skip>{{ page.title }}</h1>
 
 <div class="post-meta text-muted">
@@ -158,3 +166,5 @@ tail_includes:
         crossorigin="anonymous"
         async>
 </script>
+
+{% endif %}

@@ -3,6 +3,12 @@
  if the number is not enough, use the other latest posts to supplement.
 -->
 
+{% if page.sub == 'portfolio' %}
+
+<!-- 포트폴리오인 경우 아무것도 표현하지 않음 -->
+
+{% else %}
+
 <!-- The total size of related posts  -->
 {% assign TOTAL_SIZE = 3 %}
 
@@ -100,4 +106,6 @@
     {% endfor %}
     </div> <!-- .card-deck -->
   </div> <!-- #related-posts -->
+{% endif %}
+
 {% endif %}

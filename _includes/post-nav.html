@@ -1,6 +1,11 @@
 <!--
   Navigation buttons at the bottom of the post.
 -->
+{% if page.sub == 'portfolio' %}
+
+<!-- 포트폴리오인 경우 아무것도 표현하지 않음 -->
+
+{% else %}
 
 <div class="post-navigation d-flex justify-content-between">
   {% if page.previous.url %}
@@ -28,3 +33,5 @@
   {% endif %}
 
 </div>
+
+{% endif %}
