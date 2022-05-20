@@ -11,5 +11,6 @@ order: 4
 * Microsoft Visual C++ MVP Microsoft  : 2006년  
 * Microsoft Visual C++ MVP Microsoft  : 2005년  
 * Microsoft Visual C++ MVP Microsoft  : 2004년  
-* 정보처리기사 한국산업인력관리공단 : 2000. 08  
+* 정보처리기사 한국산업인력관리공단 : 2000. 08. 18  
+* 정보처리산업기사 한국산업인력관리공단 : 1997. 12. 22  
 {: .prompt-tip }
