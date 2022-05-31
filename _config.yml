@@ -3,7 +3,7 @@ theme: jekyll-theme-chirpy
 baseurl: ''
 lang: ko-KR
 prefer_datetime_locale:
-timezone: Asia/Shanghai
+timezone: Asia/Seoul
 title: MonosLab
 tagline: Season 1
 description: >-                         # used by seo meta and the atom feed
@@ -96,7 +96,7 @@ assets:
     env:          # [development|production]
 
 paginate: 10
-
+paginate_path: "/blog/page:num/"
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
