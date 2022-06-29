@@ -17,7 +17,7 @@ tags: [VC++, macro, encoding, string]
 
 ---
 # **문자열 인코딩 변환 매크로 사용시 주의**  
-유니코드(Unicode)와 아스키(Ascii) 상호간 문자열을 변활할때 ATL3.0에서 제공하는 문자열 변환 매크로를 많이 사용하게 되는데, **<span style="color: #FF0000">W2A, A2W, T2A, A2T의 경우 반복문에서 사용을 하게 되면 스택오버플로우(Stack overflow)가 발생</span>**하게되어 문자열이 종종 깨지게 됩니다. 이는 T2A, A2T가 변환 과정에서 내부 스택을 사용하여 변환하기 때문에 발생이 됩니다.   
+유니코드(Unicode)와 아스키(Ascii) 상호간 문자열을 변활할때 ATL3.0에서 제공하는 문자열 변환 매크로를 많이 사용하게 되는데, <span style="background-color: #FFF5B1">W2A, A2W, T2A, A2T의 경우 반복문에서 사용을 하게 되면 스택오버플로우(Stack overflow)가 발생</span>하게되어 문자열이 종종 깨지게 됩니다. 이는 W2A, T2A, A2W, A2T가 <span style="background-color: #FFF5B1">변환 과정에서 내부 스택을 사용하여 변환하기 때문에 발생</span>이 됩니다.   
 ATL7.0에서는 이를 개선하기 위해 CW2A, CA2W, CW2CA, CA2CW, CT2A, CA2T, CT2CA, CA2CT를 제공하는데, 이를 이용하는 것이 좋습니다. 이는 내부에 128 바이트의 버퍼를 가지고 있고 이를 넘어서는 경우에는 힙에 메모리를 할당하여 반복문안에 사용하더라도 스택오버플로우가 발생되지 않는다고 합니다.
 
 ---
