@@ -17,7 +17,7 @@ tags: [Format, cur, cursor, .cur]
 
 ---
 # **기본 정보**  
-최초의 CUR 파일 형식은 1981년 Microsoft의 Windows 1.0 운영 체제에 적용되었으며, 윈도우95부터는 애니메이션이 가능한 ani 파일도 사용이 가능해졌습니다. CUR 파일은 ICO 파일과 동일한 정지 이미지이며, 두개 모두 Device-Independent Bitmap DIB (Device-Independent Bitmap) 사양을 기반으로 만들어집니다. 참고로 cur 파일은 하나 이상의 이미지 파일을 포함할 수 있습니다.   
+최초의 CUR 파일 형식은 1981년 Microsoft의 Windows 1.0 운영 체제에 적용되었으며, 윈도우95부터는 애니메이션이 가능한 .ani 파일도 사용이 가능해졌습니다. .cur 파일은 .ico 파일과 동일하게 정적인 이미지이며, 두 파일 모두 Device-Independent Bitmap DIB (Device-Independent Bitmap) 스펙을 기반으로 만들어집니다. 참고로 .cur 과 .ico 파일은 하나의 파일에 한개 이상의 이미지 파일을 포함할 수 있습니다.   
 
 ---
 
