@@ -17,6 +17,21 @@ tags: [VC++, OSVERSIONINFOEX, GetVersionEx]
 
 ---
 # **윈도우 버전 체크**  
+윈도우의 버전을 얻어오는 방법은 여러가지가 있으나, GetVersion, GetVersionEx, VerifyVersionInfo 함수 등은 부정확한 버전 정보를 얻어 올 수 있어서 지양하는 것이 좋습니다.
+* Windows 8.1 이상에서는 GetVersion, GetVersionEx 함수는 더 이상 사용할 수 없습니다.
+* Windows 10 기준으로 VerifyVersionInfo 함수도 사용할 수 없습니다.
+VerifyVersionInfo 함수(Winows 2000 아래 버전는 사용 불가)는 등록 정보에서 호환성 모드를 설정한 경우에 GetVersion/GetVerionEx 함수가 페이크 값(호환성 모드에 의해 변경된 버전 정보)을 리턴하면서 원본 값을 구하기 위해서 생긴 함수였으나 윈도우 10이 출시되면서 이 함수마저 버전정보가 이상하게 나와서 사용할 수가 없습니다. 물론 아래에 설명하는 방법으로 할 경우 정상적인 정보를 얻을 수도 있습니다.
+
+아래는 MS 사이트의 원문입니다.
+
+* If the application has no manifest, VerifyVersionInfo behaves as if the operation system version is Windows 8 (6.2).
+* If the application has a manifest that contains the GUID that corresponds to Windows 8.1, VerifyVersionInfo behaves as if the operation system version is Windows 8.1 (6.3).
+* If the application has a manifest that contains the GUID that corresponds to Windows 10, VerifyVersionInfo behaves as if the operation system version is Windows 10 (10.0).
+
+The Version Helper functions use the VerifyVersionInfo function, so the behavior IsWindows8Point1OrGreater and IsWindows10OrGreater are similarly affected by the presence and content of the manifest.
+
+요약하자면 GUID를 포함한 메니페스트가 있는 경우에만 정상적으로 버전정보를 보여주며 그렇지 않은 경우에는 문제가 발생됩니다.
+
 레지스트리의 정보를 이용하여 윈도우의 버전을 체크하는 방법에 대한 정리입니다.
 
 ```cpp
@@ -150,7 +165,7 @@ int _tmain(int argc, _TCHAR *argv[])
 }
 ```
 
-* 참고 : https://neodreamer-dev.tistory.com/795
+---
 
 |운영체제|버전|Major|Minor|기타|   
 | :--- | :--- | :--- | :--- | :--- |   
