@@ -165,6 +165,8 @@ int _tmain(int argc, _TCHAR *argv[])
 }
 ```
 
+* "콘솔의 버전 정보 이용" 참고 : https://neodreamer-dev.tistory.com/795   
+
 ---
 
 |운영체제|버전|Major|Minor|기타|   
