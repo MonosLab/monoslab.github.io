@@ -5,6 +5,9 @@ author: Kwangsoo Seo
 date: 2022-07-19 02:00:00 +0900
 categories: [정보, 포맷]
 tags: [VC++, _MSC_VER, _MSC_FULL_VER, MSVC, Version]
+sitemap:
+  changefreq: weekly
+  priority : 0.5
 ---
 [![HitCount](https://hits.dwyl.com/MonosLab/post6.svg?style=flat-square)](http://hits.dwyl.com/MonosLab/post6)
 {:.no_toc}

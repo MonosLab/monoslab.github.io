@@ -5,6 +5,9 @@ author: Kwangsoo Seo
 date: 2022-07-15 06:00:00 +0900
 categories: [정보, 에러]
 tags: [Error, solved]
+sitemap:
+  changefreq: weekly
+  priority : 0.5
 ---
 [![HitCount](https://hits.dwyl.com/MonosLab/post4.svg?style=flat-square)](http://hits.dwyl.com/MonosLab/post4)
 {:.no_toc}

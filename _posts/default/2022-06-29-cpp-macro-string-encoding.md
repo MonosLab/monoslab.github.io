@@ -5,6 +5,9 @@ author: Kwangsoo Seo
 date: 2022-06-29 00:00:00 +0900
 categories: [VC++, 주의]
 tags: [VC++, macro, encoding, string]
+sitemap:
+  changefreq: weekly
+  priority : 0.5
 ---
 [![HitCount](https://hits.dwyl.com/MonosLab/post2.svg?style=flat-square)](http://hits.dwyl.com/MonosLab/post2)
 {:.no_toc}

@@ -5,6 +5,9 @@ author: Kwangsoo Seo
 date: 2022-06-28 13:52:00 +0900
 categories: [VC++, 코딩]
 tags: [VC++, console, redirection, capture]
+sitemap:
+  changefreq: weekly
+  priority : 0.5
 ---
 [![HitCount](https://hits.dwyl.com/MonosLab/post1.svg?style=flat-square)](http://hits.dwyl.com/MonosLab/post1)
 {:.no_toc}

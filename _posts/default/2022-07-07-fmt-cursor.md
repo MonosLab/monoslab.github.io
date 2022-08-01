@@ -5,6 +5,9 @@ author: Kwangsoo Seo
 date: 2022-07-07 00:00:00 +0900
 categories: [정보, 포맷]
 tags: [Format, cur, cursor, .cur]
+sitemap:
+  changefreq: weekly
+  priority : 0.5
 ---
 [![HitCount](https://hits.dwyl.com/MonosLab/post3.svg?style=flat-square)](http://hits.dwyl.com/MonosLab/post3)
 {:.no_toc}
