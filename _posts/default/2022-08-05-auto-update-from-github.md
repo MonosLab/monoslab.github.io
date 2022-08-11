@@ -19,8 +19,8 @@ sitemap:
 {:toc}  
 
 ---   
-# GitHub을 이용하여 애플리케이션 자동 업데이트 🗞 <span style="color:red">작성 중 💦<span>
-
+# GitHub을 이용하여 애플리케이션 자동 업데이트   
+   🗞 <span style="color:red">작성 중 💦<span>   
 많은 개발자들로 부터 널리 사용되고 있는 리포지토리인 GitHub을 이용하여 애플리케이션의 릴리스 버전을 자동으로 관리하는 방법에 대해 알아보려고 합니다.
 
 ## ■ GitHub api를 이용하는 방법
