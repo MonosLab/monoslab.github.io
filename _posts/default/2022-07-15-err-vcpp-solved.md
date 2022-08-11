@@ -33,4 +33,33 @@ sitemap:
 > ***<span style="color:red">LNK4022: 'xxx' 기호에만 일치하는 것을 찾을 수 없습니다.</span>***   
 <span style="color:black">해결방법 : xxx 함수가 사용하는 라이브러리(예 MFC 라이브러리 등) 중에도 존재하는 경우 발생되는 오류입니다. 예를 들면 GetResult가 MFC의 기본라이브러리에도 존재한다고 가정하면, 소스상에 GetResult라는 함수를 재정의하면 문제가 발생됩니다. 이 경우 함수명을 다른 이름으로 바꾸어주면 문제가 해결됩니다.</span>   
 
----
+---   
+# <span style="color:red">***MIDL2311***</span>   
+> ***<span style="color:red">error MIDL2311: statements outside library block are illegal in mktyplib compatability mode : [ ]</span>***   
+<span style="color:black">해결방법 : 이전의 ocx 소스 코드를 불러 올 경우 odl 파일에서 #include 헤더 구문이 library 바깥에 위치하면 해당 오류가 발생됩니다. #include 헤더 구문을 library 안쪽으로 이동시키면 해결이 됩니다.</span>   
+
+```cpp   
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(18C89C39-B40A-410B-9659-064000FCCCDB), version(1.0),
+  helpfile("Avata.hlp"),
+  helpstring("Avata ActiveX Control module"),
+  control ]
+library AVATALib
+{
+...[생략]...
+```   
+에서   
+```cpp   
+[ uuid(18C89C39-B40A-410B-9659-064000FCCCDB), version(1.0),
+  helpfile("Avata.hlp"),
+  helpstring("Avata ActiveX Control module"),
+  control ]
+library AVATALib
+{
+	#include <olectl.h>
+	#include <idispids.h>
+...[생략]...
+```   
+으로 #include의 위치를 이동시키면 됩니다.
