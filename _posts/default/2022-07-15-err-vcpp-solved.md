@@ -19,14 +19,29 @@ sitemap:
 {:toc}  
 
 ---
+# <span style="color:red">***ISO C++ 오류***</span>   
+> ***<span style="color:red">error : \<LanguageStandard\> 요소에 잘못된 값 "stdcpp20"이(가) 있습니다</span>***   
+<span style="color:black">해결방법 : <span style="background-color: #FFF5B1">프로젝트 > 속성 > 구성 속성 > C/C++ > 언어</span> 탭에서 <span style="background-color: #FFF5B1">C++ 언어 표준</span>을 <span style="background-color: #FFF5B1">ISO C++ 최신 초안 표준(/std:c++latest)</span>로 선택하면 해결이 됩니다. 이렇게 하면 현 Visual Studio에서 사용하고 있는 가장 최근의 C++ 표준 라이브러리를 사용할 수 있게 됩니다.</span>   
+
 # <span style="color:red">***C2760***</span>   
 > ***<span style="color:red">구문 오류: '식별자'은(는) 예기치 않은 토큰입니다. 필요한 토큰은 '형식 지정자'입니다.</span>***   
 <span style="color:black">해결방법 : <span style="background-color: #FFF5B1">프로젝트 > 속성 > 구성 속성 > C/C++ > 언어</span> 탭에서 <span style="background-color: #FFF5B1">준수 모드(Conformance mode)</span>를 <span style="background-color: #FFF5B1">아니오(No)</span>로 선택하면 해결이 됩니다.</span>   
 
 ---
+# <span style="color:red">***C2850***</span>   
+> ***<span style="color:red">'PCH 헤더 파일': 파일 범위에서만 사용할 수 있습니다. 중첩된 구문에는 사용할 수 없습니다.</span>***   
+<span style="color:black">추가 메시지 : PCH 경고: 전역 범위에 헤더 중지가 있어야 합니다. IntelliSense PCH 파일이 생성되지 않았습니다.   
+해결방법 : stdafx.h 또는 pch.h파일의 선언 중 세미콜론(;)이 빠져 있는지 확인합니다.(예를 들면 구조체, 배열 등 선언후 세미콜론이 올바르게 사용되었나 확인합니다.)</span>  
+
+---
 # <span style="color:red">***C4996***</span>   
 > ***<span style="color:red">'GetVersionExW': deprecated로 선언되었습니다.</span>***   
 <span style="color:black">해결방법 : <span style="background-color: #FFF5B1">프로젝트 > 속성 > 구성 속성 > C/C++ > 전처리기</span> 탭에서 <span style="background-color: #FFF5B1">전처리기 정의</span>에 <span style="background-color: #FFF5B1">_CRT_SECURE_NO_DEPRECATE</span>을 추가하거나 소스코드에 #progma warning(disable:4996)을 선언하면 됩니다.</span>   
+
+---
+# <span style="color:red">***LNK2026***</span>   
+> ***<span style="color:red">LNK2026: 모듈이 SAFESEH 이미지에 대해 안전하지 않습니다.</span>***   
+<span style="color:black">해결방법 : <span style="background-color: #FFF5B1">프로젝트 > 속성 > 구성 속성 > 링커 > 고급</span> 탭에서 <span style="background-color: #FFF5B1">이미지에 안전한 예외 처리기 포함</span>을 <span style="background-color: #FFF5B1">아니요(/SAFESEH:NO)</span>로 선택하면 해결이 됩니다.</span>     
 
 ---
 # <span style="color:red">***LNK4022***</span>   
