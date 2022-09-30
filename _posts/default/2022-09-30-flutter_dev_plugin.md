@@ -1,5 +1,5 @@
 ---
-title: "[ flutter ] Platform Windows" 
+title: "[ Flutter ] 플러터를 이용한 윈도우용 앱 개발 (1)" 
 sub: post
 author: Kwangsoo Seo
 date: 2022-09-30 06:00:00 +0900
