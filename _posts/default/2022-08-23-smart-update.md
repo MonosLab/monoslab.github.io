@@ -49,7 +49,13 @@ sitemap:
 
 ---   
 
-## 설정 파일 및 업데이트 정보 파일 정보   
+## 업데이트 STEP
+
+![SmartUpdateStep](https://monoslab.github.io/assets/img/posts/prj_update_step.png)   
+
+---   
+
+## 설정 파일 및 업데이트 정보 파일   
 
 ### SmartUpdate.json 예시   
 
