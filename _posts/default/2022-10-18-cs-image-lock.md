@@ -3,7 +3,7 @@ title: "[ C# ] Image.FromFile()을 이용하여 이미지를 불러 올때 락(l
 sub: post
 author: Kwangsoo Seo
 date: 2022-10-18 18:00:00 +0900
-categories: [C#, 코딩]
+categories: [프로그래밍, C#]
 tags: [C#, Image.FromFile(), lock, PictureBox]
 sitemap:
   changefreq: weekly

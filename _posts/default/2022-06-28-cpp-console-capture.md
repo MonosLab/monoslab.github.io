@@ -3,7 +3,7 @@ title: "[ VC++ ] 콘솔 프로그램 실행 후 출력 메시지 갈무리"
 sub: post
 author: Kwangsoo Seo
 date: 2022-06-28 13:52:00 +0900
-categories: [VC++, 코딩]
+categories: [프로그래밍, C++]
 tags: [VC++, console, redirection, capture]
 sitemap:
   changefreq: weekly
