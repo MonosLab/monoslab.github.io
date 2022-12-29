@@ -39,6 +39,11 @@ sitemap:
 <span style="color:black">해결방법 : <span style="background-color: #FFF5B1">프로젝트 > 속성 > 구성 속성 > C/C++ > 전처리기</span> 탭에서 <span style="background-color: #FFF5B1">전처리기 정의</span>에 <span style="background-color: #FFF5B1">_CRT_SECURE_NO_DEPRECATE</span>을 추가하거나 소스코드에 #progma warning(disable:4996)을 선언하면 됩니다.</span>   
 
 ---
+# <span style="color:red">***E0167***</span>   
+> ***<span style="color:red">const char * 형식의 인수가 char * 형식의 매개 변수와 호환되지 않습니다</span>***   
+<span style="color:black">해결방법 : <span style="background-color: #FFF5B1">프로젝트 > 속성 > 구성 속성 > C/C++ > 언어</span> 탭에서 <span style="background-color: #FFF5B1">준수 모드</span>를 <span style="background-color: #FFF5B1">아니요</span>로 변경하여 주면 됩니다. 다른 방법으로 변수를 타입캐스팅 해주셔도 상관없습니다만 많은 경우엔 설정으로 간단히 해결하시는것이 더 빠를 수 있습니다.</span>   
+
+---
 # <span style="color:red">***LNK2026***</span>   
 > ***<span style="color:red">LNK2026: 모듈이 SAFESEH 이미지에 대해 안전하지 않습니다.</span>***   
 <span style="color:black">해결방법 : <span style="background-color: #FFF5B1">프로젝트 > 속성 > 구성 속성 > 링커 > 고급</span> 탭에서 <span style="background-color: #FFF5B1">이미지에 안전한 예외 처리기 포함</span>을 <span style="background-color: #FFF5B1">아니요(/SAFESEH:NO)</span>로 선택하면 해결이 됩니다.</span>     
