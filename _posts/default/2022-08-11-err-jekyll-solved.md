@@ -9,7 +9,7 @@ sitemap:
   changefreq: weekly
   priority : 0.5
 ---
-[![HitCount](https://hits.dwyl.com/MonosLab/post10.svg?style=flat-square)](http://hits.dwyl.com/MonosLab/post10)
+[![HitCount](https://hits.dwyl.com/MonosLab/post10.svg?style=flat-square&show=unique)](http://hits.dwyl.com/MonosLab/post10)
 {:.no_toc}
 ---
 **Contents**
