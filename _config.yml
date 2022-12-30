@@ -1,7 +1,7 @@
 # The Site Configuration
 theme: jekyll-theme-chirpy
 baseurl: ''
-lang: ko
+lang: ko-KR
 prefer_datetime_locale:
 timezone: Asia/Seoul
 title: MonosLab
@@ -24,7 +24,7 @@ social:
   email: chps74@naver.com               # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
+    - https://www.youtube.com/channel/UCypXLJ4v42wl5FOsLebYiOg      # change to your youtube
     - https://github.com/monoslab       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
