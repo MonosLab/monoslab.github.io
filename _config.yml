@@ -1,7 +1,7 @@
 # The Site Configuration
 theme: jekyll-theme-chirpy
 baseurl: ''
-lang: ko-KR
+lang: ko
 prefer_datetime_locale:
 timezone: Asia/Seoul
 title: MonosLab
