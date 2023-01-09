@@ -3,7 +3,7 @@ title: "[ VC++ ] GitHub을 이용하여 애플리케이션 자동 업데이트"
 sub: post
 author: Kwangsoo Seo
 date: 2022-08-05 06:00:00 +0900
-categories: [프로그래밍, C++]
+categories: [프로그래밍, C++ (CPP)]
 tags: [GitHub, 자동, 업데이트, auto, update]
 sitemap:
   changefreq: weekly

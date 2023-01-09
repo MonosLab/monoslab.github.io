@@ -3,7 +3,7 @@ title: "[ VC++ ] 문자열 인코딩 변환 매크로 주의 사항(W2A, A2W, T2
 sub: post
 author: Kwangsoo Seo
 date: 2022-06-29 00:00:00 +0900
-categories: [프로그래밍, C++]
+categories: [프로그래밍, C++ (CPP)]
 tags: [VC++, macro, encoding, string]
 sitemap:
   changefreq: weekly
