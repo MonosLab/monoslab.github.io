@@ -1,9 +1,9 @@
 ---
-title: "[ Flutter ] Electron과 비교" 
+title: "[ Flutter ] Flutter와 Electron 비교" 
 sub: post
 author: Kwangsoo Seo
 date: 2022-12-16 06:00:00 +0900
-categories: [프로그래밍, Flutter, Electron]
+categories: [프로그래밍, Flutter]
 tags: [Flutter 3.0, 플러터 3.0, Electron, 일렉트론, Windows]
 sitemap:
   changefreq: weekly

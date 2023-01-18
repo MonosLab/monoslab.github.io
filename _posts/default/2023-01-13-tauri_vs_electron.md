@@ -1,10 +1,10 @@
 ---
-title: "[ Rust ] Tauri와 Electron과 비교" 
+title: "[ RUST ] Tauri와 Electron 비교" 
 sub: post
 author: Kwangsoo Seo
 date: 2023-01-13 06:00:00 +0900
-categories: [프로그래밍, Rust, Tauri, Electron]
-tags: [Rust, Tauri, 타우리, Electron, 일렉트론, Windows]
+categories: [프로그래밍, RUST]
+tags: [RUST, Tauri, 타우리, Electron, 일렉트론, Windows]
 sitemap:
   changefreq: weekly
   priority : 0.5
