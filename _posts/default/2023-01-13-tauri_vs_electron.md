@@ -1,5 +1,5 @@
 ---
-title: "[ Rust ] Electron과 비교" 
+title: "[ Rust ] Tauri와 Electron과 비교" 
 sub: post
 author: Kwangsoo Seo
 date: 2023-01-13 06:00:00 +0900
