@@ -48,7 +48,6 @@
 	    <img src="/assets/img/default/{{ tab.icon }}.png" alt="{{ tab.icon }}" onerror="this.style.display='none'">
         <!--i class="fa-fw {{ tab.icon }} ml-xl-3 mr-xl-3 unloaded"></i-->
         {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
-
         <span>{{ site.data.locales[lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
       </a>
     </li> <!-- .nav-item -->
