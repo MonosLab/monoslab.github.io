@@ -53,7 +53,7 @@ Tauri-codegen 크레이트를 활용하여 컨텍스트, 핸들러 및 명령을
 cargo에 필요한 어떤 특수 기능을 조작하기 위해 빌드시 매크로를 적용합니다.   
 * **tauri-codegen**   
 앱과 시스템 트레이를 위한 아이콘을 포함하여 Assets을 삽입, 해시 및 압축한다. 컴파일시 tauri.con.json을 분석하고 Config 구조체를 생성합니다.   
-* **[업스트림(Upstream)](#f1) 라이브러리**   
+* **<sup id="a1">[업스트림(Upstream)](#f1)</sup> 라이브러리**   
   * **WRY** <span style="color:green;font-weight:bold">Cross-platform Webview rendering library</span> : Webview와의 인터페이스를 유지하고 관리합니다.   
   * **TAO** <span style="color:green;font-weight:bold">Cross-platform application window creation library</span> : 애플리케이션 윈도우를 만들고 관리합니다.   
 
