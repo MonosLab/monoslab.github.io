@@ -46,7 +46,7 @@ sitemap:
 * **tauri-macros**   
 Tauri-codegen 크레이트를 활용하여 컨텍스트, 핸들러 및 명령을 위한 매크로를 만듭니다.   
 * **tauri-utils**   
-많은 곳에서 재사용되고, 환경 파일 구문 분석, 플랫폼 트리플(Platform triples) 감지, CSP(Content Security Policy) 와 Assets 관리 등과 같은 유용한 유틸리티를 제공하는 공통 코드입니다.   
+환경 파일 구문 분석, 플랫폼 트리플(Platform triples) 감지, CSP(Content Security Policy) 와 Assets 관리 등과 같은 많은 곳에서 재사용이 가능한 유용한 유틸리티를 제공하는 공통 코드입니다.   
 * **tauri-runtime-wry**   
 이 라이브러리는 인쇄, 모니터 감지와 윈도우 관련 작업과 같은 WRY를 위한 시스템 수준의 특별한 상호작용을 할 수 있게 합니다.   
 * **tauri-build**   
@@ -54,8 +54,8 @@ cargo에 필요한 어떤 특수 기능을 조작하기 위해 빌드시 매크�
 * **tauri-codegen**   
 앱과 시스템 트레이를 위한 아이콘을 포함하여 Assets을 삽입, 해시 및 압축한다. 컴파일시 tauri.con.json을 분석하고 Config 구조체를 생성합니다.   
 * **<sup id="a1">[업스트림(Upstream)](#f1)</sup> 라이브러리**   
-  * **WRY** <span style="color:green;font-weight:bold">Cross-platform Webview rendering library</span> : Webview와의 인터페이스를 유지하고 관리합니다.   
-  * **TAO** <span style="color:green;font-weight:bold">Cross-platform application window creation library</span> : 애플리케이션 윈도우를 만들고 관리합니다.   
+  * **WRY** <span style="color:green;font-weight:bold">Cross-platform Webview rendering library</span> :  Windows, macOS, Linux와 같은 모든 주요 데스크탑 플랫폼을 지원하는 <span style="color:blue;font-weight:bold">크로스 플랫폼용 Webview 렌더링 Rust 라이브러리</span>이며 플랫폼에 맞는 웹뷰를 선택하고 상호작용을 결정해주는추상화 계층입니다. Webview와의 인터페이스를 유지하고 관리합니다.   
+  * **TAO** <span style="color:green;font-weight:bold">Cross-platform application window creation library</span> : Windows, MacOS, Linux와 같은 모든 주요 플랫폼을 지원하는 <span style="color:blue;font-weight:bold">크로스 플랫폼용 창 생성 Rust 라이브러리</span>이며 애플리케이션 윈도우를 만들고 관리합니다. (Rust로 작성되었으며 메뉴 표시줄 및 시스템 트레이 등과 같은 것을 구현할 수 있습니다.)   
 
 ---
 
@@ -63,9 +63,9 @@ cargo에 필요한 어떤 특수 기능을 조작하기 위해 빌드시 매크�
 
 ## 기본 도구   
 * **API (JavaScript / TypeScript)**   
-Webview가 백엔드 활동을 위해 호출/수신 하도록 프론트엔드 프레임워크에 임포트하기 위해 CommonJS(cjs)와 ECMAScript Module(esm) JavaScript 엔드포인트(요청을 받아 응답을 제공하는 서비스를 사용할 수 있는 지점)을 생성하는 TypeScript 라이브러리 입니다. 호스트에 웹뷰의 메시지 전달을 위해 사용합니다.   
+Webview가 백엔드 활동을 위해 호출/수신 하도록 프론트엔드 프레임워크에 임포트하기 위해 CommonJS(cjs)와 ECMAScript Module(esm) JavaScript 엔드포인트(요청을 받아 응답을 제공하는 서비스를 사용할 수 있는 지점)를 생성하는 TypeScript 라이브러리 입니다. 호스트에 웹뷰의 메시지 전달을 위해 사용합니다.   
 * **Bundler (Rust / Shell)**   
-MacOS, Windows 및 Linux 등의 플랫폼용 타우리 앱을 빌드하기 위한 라이브러리입니다. (모바일 플랫폼도 지원하기 위해 준비중에 있습니다.)   
+MacOS, Windows 및 Linux 등의 플랫폼용 타우리 앱을 빌드하기 위한 라이브러리입니다. (참고로 현재 모바일 플랫폼을 위한 알파 버전이 나와 있습니다.)   
 * **cli.rs (Rust)**   
 이 Rust 실행 파일은 MacOS, Windows 및 Linux의 CLI가 필요로 하는 요구 활동에 대한 모든 인터페이스를 제공합니다.   
 * **cli.js (JavaScript)**   
@@ -80,6 +80,10 @@ MacOS, Windows 및 Linux 등의 플랫폼용 타우리 앱을 빌드하기 위�
 이 프로젝트는 몇 가지 유용한 기능으로 Visual Studio Code 인터페이스를 향상시킵니다.   
 * **vue-cli-plugin-tauri**   
 vue-cli 프로젝트에 Tauri를 매우 빠르게 설치할 수 있습니다.   
+
+## 그 외
+
+* **Awesome Tauri** : 타우리에서 사용할 수 있는 유용한 플러그인들이 있는 github. <a href="https://github.com/tauri-apps/awesome-tauri" target="_blank">링크</a>
 
 ---
 
