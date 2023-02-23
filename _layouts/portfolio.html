@@ -31,6 +31,7 @@ layout: page
   {% if pre_year == "" or pre_year == null %}
     {% assign pre_year = this_year %}
   {% elsif this_year != pre_year %}
+  </ul>
   <span class="lead">{{this_year}}</span>
   <ul class="list-unstyled">
     {% assign last_day = "" %}
