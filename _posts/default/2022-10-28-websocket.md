@@ -90,7 +90,8 @@ Sec-WebSocket-Protocol: chat
 Sec-WebSocket-Version: 13
 Origin: http://example.com
 ```   
-\<HTTP기반의 연결을 WebSocket기반으로 upgrade하겠다고 요청하는 과정\>   
+<center>< HTTP기반의 연결을 WebSocket기반으로 upgrade하겠다고 요청하는 과정 ></center>   
+
 - HTTP를 웹소켓 프로토콜로 바꾸기 위해 Protocol switching 과정을 진행   
 ```html   
 HTTP/1.1 101 Switching Protocols
@@ -99,7 +100,8 @@ Connection: Upgrade
 Sec-WebSocket-Accept: HSmrc0sMlYUkAGmm5OPpG2HaGWk=
 Sec-WebSocket-Protocol: chat
 ```   
-\<HTTP를 WebSocket으로 switching 하겠다고 응답하는 과정\>   
+<center>< HTTP를 WebSocket으로 switching 하겠다고 응답하는 과정 ></center>   
+
 - HTTP 대신 WS와 WSS 프로토콜로 데이터 송/수신(UTF8인코딩 데이터를 0x00과 0xff 사이에 데이터를 넣어 보냄)   
 b. 연결 수립 후 서버와 클라이언트 간에 TCP/IP 기반 웹 소켓 연결이 이루어지고, 일정 시간이 지나면 HTTP 연결은 자동으로 끊김   
 c. 프레임으로 구성된 메시지라는 논리적 단위로 송/수신   
