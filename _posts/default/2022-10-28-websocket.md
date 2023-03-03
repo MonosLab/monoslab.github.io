@@ -98,7 +98,7 @@ Upgrade: websocket
 Connection: Upgrade
 Sec-WebSocket-Accept: HSmrc0sMlYUkAGmm5OPpG2HaGWk=
 Sec-WebSocket-Protocol: chat
-```
+```   
 \<HTTP를 WebSocket으로 switching 하겠다고 응답하는 과정\>   
 - HTTP 대신 WS와 WSS 프로토콜로 데이터 송/수신(UTF8인코딩 데이터를 0x00과 0xff 사이에 데이터를 넣어 보냄)   
 b. 연결 수립 후 서버와 클라이언트 간에 TCP/IP 기반 웹 소켓 연결이 이루어지고, 일정 시간이 지나면 HTTP 연결은 자동으로 끊김   
