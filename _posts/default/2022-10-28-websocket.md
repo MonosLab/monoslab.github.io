@@ -90,7 +90,7 @@ Sec-WebSocket-Protocol: chat
 Sec-WebSocket-Version: 13
 Origin: http://example.com
 ```   
-<center>- HTTP기반의 연결을 WebSocket기반으로 upgrade하겠다고 요청하는 과정 -</center>   
+<center>< HTTP기반의 연결을 WebSocket기반으로 upgrade하겠다고 요청하는 과정 ></center>   
 
 - HTTP를 웹소켓 프로토콜로 바꾸기 위해 Protocol switching 과정을 진행   
 ```html   
@@ -100,7 +100,7 @@ Connection: Upgrade
 Sec-WebSocket-Accept: HSmrc0sMlYUkAGmm5OPpG2HaGWk=
 Sec-WebSocket-Protocol: chat
 ```   
-<center>- HTTP를 WebSocket으로 switching 하겠다고 응답하는 과정 -</center>   
+<center>< HTTP를 WebSocket으로 switching 하겠다고 응답하는 과정 ></center>   
 
 - HTTP 대신 WS와 WSS 프로토콜로 데이터 송/수신(UTF8인코딩 데이터를 0x00과 0xff 사이에 데이터를 넣어 보냄)   
 b. 연결 수립 후 서버와 클라이언트 간에 TCP/IP 기반 웹 소켓 연결이 이루어지고, 일정 시간이 지나면 HTTP 연결은 자동으로 끊김   
@@ -145,8 +145,9 @@ MASK 비트가 설정되어 있디만 32비트 사이즈의 Masking-Key 필드 �
 * https://velog.io/@gth1123/http-vs-socket   
 * https://blog.naver.com/pje0721/222835392496   
 * https://www.joinc.co.kr/w/man/12/websocket
-* https://ws-pace.tistory.com/104 <그림으로 잘 설명됨>   
-* https://kbj96.tistory.com/46  ==> https://blog.scaleway.com/iot-hub-what-use-case-for-websockets/   
+* https://ws-pace.tistory.com/104   \<그림으로 잘 설명됨\>   
+* https://kbj96.tistory.com/46   
+* https://blog.scaleway.com/iot-hub-what-use-case-for-websockets/   
 * https://velog.io/@ranja/%EC%9B%B9-%EC%86%8C%EC%BC%93%EA%B3%BC-HTTP%EC%9D%98-%EC%B0%A8%EC%9D%B4   
 * https://developer.mozilla.org/ko/docs/Web/API/WebSockets_API/Writing_WebSocket_servers   
-* https://doozi0316.tistory.com/entry/WebSocket%EC%9D%B4%EB%9E%80-%EA%B0%9C%EB%85%90%EA%B3%BC-%EB%8F%99%EC%9E%91-%EA%B3%BC%EC%A0%95-socketio-Polling-Streaming <http header가 잘 설명되어 있음>   
+* https://doozi0316.tistory.com/entry/WebSocket%EC%9D%B4%EB%9E%80-%EA%B0%9C%EB%85%90%EA%B3%BC-%EB%8F%99%EC%9E%91-%EA%B3%BC%EC%A0%95-socketio-Polling-Streaming    \<http header가 잘 설명되어 있음\>   
