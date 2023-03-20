@@ -1,5 +1,5 @@
 ---
-title: "[ Project ] Smart Update 설계 및 개발" 
+title: "[ Project ] Workboard 설계 및 개발" 
 sub: post
 author: Kwangsoo Seo
 date: 2023-03-20 06:00:00 +0900
