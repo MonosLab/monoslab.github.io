@@ -82,7 +82,7 @@ create-tauri-app 도구를 이용하여 프로젝트를 생성하면 기본적�
 주요 파일들에 대해 살펴보면,   
 > **<span style="color:black">루트</span>**   
 
-* **package.json** : 프로젝트 루트에 위치하고 있으며, 프로젝트에 필요한 패키지에 대한 정보를 담고 있습니다.
+* **package.json** : 프로젝트에 필요한 패키지에 대한 정보를 담고 있습니다.
 
 > **<span style="color:black">src 폴더</span>**   
 
