@@ -92,7 +92,7 @@ create-tauri-app 도구를 이용하여 프로젝트를 생성하면 기본적�
 
 > **<span style="color:black">src-tauri 폴더</span>**   
 
-* **build.rs** : 프로젝트에 필요한 소스 파일을 컴파일하고 패키지를 빌드하기 직전에 실행합니다. (C라이브러리 구축, 호스트 시스템에서 C라이브러리 찾기, Rust 모듈 생성하기, 크레이트에 필요한 플랫폼 구성등의 작업 수행) [작업예시](https://doc.rust-lang.org/cargo/reference/build-script-examples.html)   
+* **build.rs** : 프로젝트에 필요한 소스 파일을 컴파일하고 패키지를 빌드하기 직전에 실행합니다. (C라이브러리 구축, 호스트 시스템에서 C라이브러리 찾기, Rust 모듈 생성하기, 크레이트에 필요한 플랫폼 구성등의 작업 수행) [작업예시](https://doc.rust-lang.org/cargo/reference/build-script-examples.html){:target="_blank"}   
 * **cargo.lock** : 프로젝트에 필요한 의존하고 있는 크레이트의 정확한 버전을 트랙킹하기 위한 파일입니다. (수정 금지)    
 * **cargo.toml** : cargo로 만든 프로젝트의 설정 파일이며 패키지에 관한 정보 및 크레이트들을 관리합니다.    
 * **tauri.conf.json** : tauri의 정보 및 권한 등을 설정할 수 있는 파일입니다.   
