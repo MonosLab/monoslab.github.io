@@ -32,7 +32,7 @@ JSON은 JavaScript 객체 리터럴, 배열, 스칼라 데이터를 표현하는
 }
 ```
 위의 conf.json 파일을 읽어 오기 위해 tauri.conf.json 파일에 리소스를 추가해 줍니다. 배열에 각각의 파일을 입력하여도 되지만 *를 이용하여 conf 폴더내의 모든 파일을 추가하도록 하겠습니다. 그리고 타우리의 모든 API를 사용하도록 허용 해주겠습니다.
-```
+```json
 {
   "build": { ... },
   "package": { ... },
@@ -58,7 +58,7 @@ serde_json = "1.0"
 를 추가해 줍니다.
 
 이제 main.rs의 소스를 열어,
-```
+```rust
 use std::env;
 use std::fs::File;
 
@@ -86,7 +86,7 @@ DEBUG : false
 
 ## JSON 파일 저장하기     
 아래의 코드는 읽어 왔던 JSON 파일 변경하여 저장하는 예제입니다.   
-```
+```rust
 use std::env;
 use std::fs;
 use std::str::FromStr;
@@ -114,4 +114,11 @@ fn parent_path() -> String {
   format!("{}", path.parent().unwrap().display())
 }
 ```
-serde_json::Value를 이용하여 json의 자료형으로 변환 후 각각의 키에 값을 넣어주고 파일시스템(fs) API를 통해 파일을 저장하면 됩니다.
+serde_json::Value를 이용하여 json의 자료형으로 변환 후 각각의 키에 값을 넣어주고 파일시스템(fs) API를 통해 파일을 저장하면 됩니다. 빌드 후 conf.json 파일을 열어보면 아래와 같이 우리가 원하는 결과 값으로 저장이 되어 있을 것입니다.
+```json
+{
+  "debug": false,
+  "port": 80,
+  "url": "http://monoslab"
+}
+```
