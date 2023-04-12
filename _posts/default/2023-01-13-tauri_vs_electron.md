@@ -1,5 +1,5 @@
 ---
-title: "[ RUST ] Tauri와 Electron 비교" 
+title: "우당탕탕 타우리 #000💬 Tauri와 Electron 비교" 
 sub: post
 author: Kwangsoo Seo
 date: 2023-01-13 06:00:00 +0900

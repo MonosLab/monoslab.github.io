@@ -1,5 +1,5 @@
 ---
-title: "[ RUST ] What is 타우리 - 타우리(Tauri) #1" 
+title: "우당탕탕 타우리 #001💬 What is 타우리" 
 sub: post
 author: Kwangsoo Seo
 date: 2023-02-21 06:00:00 +0900
