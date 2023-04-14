@@ -113,12 +113,12 @@ fn parent_path() -> String {
   let path = env::current_exe().unwrap();
   format!("{}", path.parent().unwrap().display())
 }
-```
-serde_json::Value를 이용하여 json의 자료형으로 변환 후 각각의 키에 값을 넣어주고 파일시스템(fs) API를 통해 파일을 저장하면 됩니다. 빌드 후 conf.json 파일을 열어보면 아래와 같이 우리가 원하는 결과 값으로 저장이 되어 있을 것입니다.
-```json
+```   
+serde_json::Value를 이용하여 json의 자료형으로 변환 후 각각의 키에 값을 넣어주고 파일시스템(fs) API를 통해 파일을 저장하면 됩니다. 빌드 후 conf.json 파일을 열어보면 아래와 같이 우리가 원하는 결과 값으로 저장이 되어 있을 것입니다.   
+```json   
 {
-  "debug": false,
-  "port": 80,
-  "url": "http://monoslab"
+	"debug": false,
+	"port": 80,
+	"url": "http://monoslab"
 }
-```
+```   
