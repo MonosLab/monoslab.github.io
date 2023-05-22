@@ -48,3 +48,9 @@ C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/jekyll-4.2.2/lib/jekyll/utils.rb:364:in `
 > 오류 해결 : tags: [Error, TBC 3.0] 
 </span>
 ---
+# <span style="color:red">***ERROR: Eng tag 'h2' isn't allowed here.***</span>   
+> ***<span style="color:red">ERROR: Eng tag 'h2' isn't allowed here. Currently open tags: html, body, div, div, div, div, div, div, h2, span.</span>***   
+<span style="color:black">해결방법 : 빌드시 타이틀(#, ## 등)에 span 태그 사용시 span 태그가 생기는 버그로 인해 문제가 발생되어 span 태그를 제거함.
+</span>  
+
+---  
