@@ -32,7 +32,7 @@ sitemap:
 > **<span style="color:black">단순한 커널 랩퍼(Wrapper)가 아니다.</span>**   
 > 직접적으로 OS에 대한 시스템 호출을 위해 WRY와 TAO를 이용합니다.   
 
-## <span style="color:red">라이선스</span>
+## 라이선스
 > **<span style="color:black">MIT 또는 Apache-2.0 라이선스 적용.</span>**
 
 ---
