@@ -25,7 +25,7 @@ sitemap:
 Tauri는 거의 모든 프론트엔드 스택과 호환이 됩니다. 프로젝트를 생성하기 가장 쉬운 방법은 create-tauri-app을 이용하는 것입니다. 이 도구는 vanilla HTML/CSS/JavaScript나 React, Svelte, Yew 등의 다양한 프론트엔드 프레임워크를 위한 독자적인 템플릿을 제공합니다.
 여기서는 윈도우에는 기본적으로 설치되어 있는 PowerShell과 개발을 위해 설치해야하는 Cargo를 이용하는 방법으로 진행을 해보도록 하겠습니다. 이외의 다양한 방법은 tauri 공홈 문서(https://tauri.app/v1/guides/getting-started/setup/)에서 확인하시기 바랍니다. 아래의 2가지 방법중 하나를 이용해서 기본 골격의 tauri 프로젝트를 생성합니다.
 
-## <span style="color:blue">⛓ PowerShell 이용하기</span>
+## ⛓ PowerShell 이용하기   
 
 파워쉘을 오픈하고 프로젝트 폴더를 생성할 폴더로 이동 후 아래의 명령을 입력합니다.   
 > PS C:\\>**<span style="color:black">$env:CTA_ARGS="--alpha";iwr -useb https://create.tauri.app/ps | iex</span>**   
@@ -68,7 +68,7 @@ Rust를 선택한 경우에 src-tauri 폴더 아래의 Cargo.toml을 살펴 보�
 
 ---
 
-## <span style="color:blue">⛓ Cargo 이용하기</span>   
+## ⛓ Cargo 이용하기   
 
 우선 윈도우 Command 창을 열고 프로젝트를 생성할 폴더로 이동 후 아래의 명령을 입력하여 create-tauri-app을 설치합니다.   
 
