@@ -147,3 +147,5 @@ fn main() {
 ```
 
 간단히 내용을 요약하자면, 스플래쉬 스크린과 메인 윈도우의 객체를 얻어오고 로딩 작업(tauri::async_runtime::spawn)이 끝나면 스플래쉬 스크린을 닫고(close()) 메인 윈도우를 보이게(show()) Rust 코드로도 구현이 가능합니다.
+
+> **<span style="color:black">참고 : 위의 내용은 가이드문서(https://tauri.app/v1/guides/features/splashscreen/)를 참고하여 만들었습니다.</span>**
