@@ -1,10 +1,10 @@
 ---
-title: "[ VC++ ] 빠른 실행창(Taskbar)의 프로그램 아이콘 클릭시 최소화 되지 않는 문제 해결"
+title: "[ VC++ ] 작업표시줄(Taskbar)의 프로그램 아이콘 클릭시 최소화 되지 않는 문제 해결"
 sub: post
 author: Kwangsoo Seo
 date: 2023-09-12 00:00:00 +0900
 categories: [프로그래밍, C++ (CPP)]
-tags: [VC++, taskbar, minimize, 빠른실행창, 최소화]
+tags: [VC++, taskbar, minimize, 작업표시줄, 최소화]
 sitemap:
   changefreq: weekly
   priority : 0.5
