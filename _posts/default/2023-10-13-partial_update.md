@@ -26,7 +26,7 @@ sitemap:
 ---   
 
 ## <b>장/단점</b>   
-### ⭕ <b>(1안) 다중 다운로드</b>   
+### <b>⭕ (1안) 다중 다운로드</b>   
 1. 전체 파일 사이즈를 얻어와서 빈 파일을 생성하고 분할 다운로드한 데이터를 씀   
 2. 실패한 경우 실패 목록에 저장하고 다음 범위의 데이터를 요청함.   
 3. 마지막까지 데이터 요청이 끝난 경우 다시 실패한 목록을 요청하여 다운로드 함.   
@@ -41,7 +41,7 @@ sitemap:
 
 ![PartailDownload_001](https://monoslab.github.io/assets/img/posts/prj_mpdn_001.png)   
 
-### ⭕ <b>(2안) 순차적 다운로드 (선택)</b>   
+### <b>⭕ (2안) 순차적 다운로드 (선택)</b>   
 1. 임시 폴더에 파일을 생성하고, 분할 다운로드한 데이터를 씀.   
 2. 실패한 경우 일정 시간 경과 후 다시 재 요청을 함. (http에러에 대한 처리 필요; 4xx, 5xx 에러의 경우 설정에 따라 중지 유무 판단)   
 3. 모두 다운로드가 된 경우 요청한 프로그램에 통지.   
@@ -63,21 +63,21 @@ sitemap:
 
 위의 그림을 살펴보면 그룹웨어 서버에는 Pre-patch용과 patch용 버전 파일 및 업데이트 파일이 존재하며 두 파일의 용도는 아래와 같습니다.   
 
-### <span style="background-color: #fcf9e1">Pre-patch</span>   
+<span style="font-size:20px; background-color:#fcf9e1"> Pre-patch </span>
 * ver.msp : 사전 다운로드를 위한 버전 정보 파일입니다.   
 * files : 사전에 업데이트 될 파일을 로컬의 임시 폴더에 저장해 두기 위한 파일입니다.   
 
-### <span style="background-color: #fcf9e1">Patch</span>   
+<span style="font-size:20px; background-color:#fcf9e1"> Patch </span>   
 * ver.ms : 업데이트 버전 정보를 담고 있습니다.   
 * files : 현재의 버전 정보(ver.ms)와 일치하는 업데이트 파일입니다. 사전 업데이트 파일이 있는 경우 업데이트 시점에 사전 업데이트 파일로 교체됩니다. (수동으로 작업)   
 
 프로그램 실행시 서버의 업데이트 폴더의 버전 파일(ver.ms)과 로컬에 있는 버전 파일(ver.ms)을 먼저 비교를 하게 됩니다. 버전이 동일한 경우에는 프로그램을 실행하고 일치하지 않는 경우에는 사전 다운로드된 파일의 유무에 따라 아래의 방법으로 업데이트를 진행하게 됩니다.   
 
-### <span style="background-color: #fcf9e1">사전 다운로드 된 파일이 있는 경우</span>   
+<span style="font-size:20px; background-color:#fcf9e1"> 사전 다운로드 된 파일이 있는 경우 </span>   
 * 사전 다운로드된 파일이 있는 경우 완료가 된 파일에 한해 toolbox 폴더 아래로 이동   
 * 사전 다운로드가 완료되지 않은 파일은 서버에서 직접 다운로드 진행   
 
-### <span style="background-color: #fcf9e1">사전 다운로드 된 파일이 없는 경우</span>   
+<span style="font-size:20px; background-color:#fcf9e1"> 사전 다운로드 된 파일이 없는 경우 </span>   
 * 서버에서 직접 다운로드 진행
 
 프로그램이 정상적으로 실행된 이후에는 주기적으로 서버에 사전 업데이트가 있는지 체크하고 사전 업데이트가 필요한 경우에는   
@@ -89,7 +89,7 @@ sitemap:
 * Pre-patch 파일 다운로드   
 를 진행하게 됩니다.   
 
-### <span style="background-color: #fcf9e1">전체 흐름 요약</span>   
+<span style="font-size:20px; background-color:#fcf9e1"> 전체 흐름 요약 </span>   
 ![PartailDownload_004](https://monoslab.github.io/assets/img/posts/prj_mpdn_004.png)   
 
 ---
