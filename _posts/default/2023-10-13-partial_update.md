@@ -67,7 +67,7 @@ sitemap:
 * ver.msp : 사전 다운로드를 위한 버전 정보 파일입니다.   
 * files : 사전에 업데이트 될 파일을 로컬의 임시 폴더에 저장해 두기 위한 파일입니다.   
 
-### <span style="background-color: #fcf9e1">Patch</span>
+### <span style="background-color: #fcf9e1">Patch</span>   
 * ver.ms : 업데이트 버전 정보를 담고 있습니다.   
 * files : 현재의 버전 정보(ver.ms)와 일치하는 업데이트 파일입니다. 사전 업데이트 파일이 있는 경우 업데이트 시점에 사전 업데이트 파일로 교체됩니다. (수동으로 작업)   
 
