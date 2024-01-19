@@ -54,3 +54,34 @@ C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/jekyll-4.2.2/lib/jekyll/utils.rb:364:in `
 </span>  
 
 ---  
+# <span style="color:red">***The process '/opt/hostedtoolcache/Ruby/.../bin/bundle' failed with exit code 5***</span>   
+> ***<span style="color:red">The process '/opt/hostedtoolcache/Ruby/3.3.0/x64/bin/bundle' failed with exit code 5</span>***   
+<span style="color:black">해결방법 : 루트 아래의 '\.github\workflows' 폴더에서 ci.yml, pages-deploy.yml의 Ruby 버전을 변경하여 줍니다.</span>  
+
+**<U>ci.yml 수정</U>**   
+
+```ruby
+jobs:
+  build:
+    ...
+    steps:
+      ...
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2
+```
+
+**<U>pages-deploy.yml 수정</U>**   
+
+```ruby
+jobs:
+  continuous-delivery:
+   ...
+    steps:
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2
+```
+
