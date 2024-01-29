@@ -95,5 +95,5 @@ sitemap:
 ---
 
 ## <b>다운로드 실패시 처리 방안</b>  
-분할 다운로드(Partial download)시 실패한 경우에는 dn.json파일의 현재 다운로드 완료한 크기로 부터 정보를 얻어 이전에 다운로드 완료한 부분(S<sub>0</sub>)에서 부터 S<sub>1</sub>까지  재 요청하여 다운로드를 수행합니다. 이러한 방법을 통해 프로그램이 재시작하더라도 이어받기가 가능해 집니다.
+분할 다운로드(Partial download)시 실패(S<sub>0</sub>~S<sub>1</sub> 구간)한 경우에는 현재까지 다운로드 완료한 크기를 얻어와 이전에 다운로드 완료한 부분(S<sub>0</sub>)에서 부터 S<sub>1</sub>까지  재 요청하여 다운로드를 수행합니다. 이러한 방법을 통해 프로그램이 재시작하더라도 이어받기가 가능해 집니다.
 ![PartailDownload_005](https://monoslab.github.io/assets/img/posts/prj_mpdn_005.png)   
