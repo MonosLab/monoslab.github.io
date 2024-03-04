@@ -30,7 +30,7 @@ sitemap:
 * 린터(Linter) : 코드의 구조를 검사해서 버그가 날 수 있을 만한 코드, 스타일 오류, 의심스러운 구조 등을 찾아주는 도구.   
 > **<span style="color:blue">일관된 코드 스타일을 유지하려면 포맷터를 ..., 코드의 구조와 잠재적 문제를 해결하려면 린터를 사용하라!</span>**
 
-## Rust 표준 포맷터(Formatter) : <span style="color:red;font-weight:bold">rustfmt</span>   
+## <span style="color:tomato;font-weight:bold">Rust 표준 포맷터(Formatter) : rustfmt</span>   
 개개인의 다양한 코딩 스타일로 코딩된 코드를 Rust 팀에서 개발한 rustfmt을 이용하여 정형화된 코드 스타일을 유지할 수 있게 해줍니다. 아래와 같은 방법으로 설치를 합니다.
 ```
 \> rustup component add rustfmt
@@ -42,7 +42,7 @@ sitemap:
 위의 명령이 잘 수행되었다면, 소스 코드를 열어 아름답게 정리(?)된 코드를 확인 하실 수 있을 것입니다.
 이외에도 Cargo.toml 파일에 'rustfmt-nightly = "1.4.21"'를 추가하고 코드 내에서 정리가 필요하지 않은 부분들은 설정을 통해 skip등의 작업을 수행할 수도 있습니다. (자세한 내용은 https://crates.io/crates/rustfmt-nightly 를 참조 하세요.)
 
-## Rust 표준 린터(Linter) : <span style="color:red;font-weight:bold">clippy</span>   
+## <span style="color:tomato;font-weight:bold">Rust 표준 린터(Linter) : clippy</span>   
 프로그래밍 언어에는 잠재적 문제를 유발할 수 있는 코드나 추천 하지 않는 방법을 사용하는 경우를 체크해서 경고하여 주는 린트(lint)라는 프로그램이 있습니다. Python의 pylint나 ECMAScript의 eslint 처럼 Rust에서도 Clippy라는 린터가 존재합니다. Rust의 1.78.0 버전 미만에서는 아래와 같은 방법으로 설치를 합니다. (1.78.0 버전 이상부터는 포함되어 배포되기 때문에 별도로 설치하지 않습니다.)
 ```
 \> rustup component add clippy
