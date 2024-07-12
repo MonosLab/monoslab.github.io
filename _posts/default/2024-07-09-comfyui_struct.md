@@ -19,7 +19,6 @@ sitemap:
 {:toc}  
 
 ---
-이는 코드를 짤 필요 없이 노드, 그래프, 플로우 차트 기반으로 스테이블 디퓨전을 사용할 수 있습니다.
 # ComfyUI 란?   
 ComfyUI는 스테이블 디퓨전(Stable diffusion) 모델의 요소들을 노드로 표현하여 생성, 연결하는 워크플로우를 제공하여 쉽게 이미지를 생성할 수 있도록 돕는 노드 기반의 GUI(Graphical User Interface) 도구입니다. 코드를 직접 작성할 필요가 없으며, 노드들의 연결만으로 스테이블 디퓨전을 이용할 수 있습니다. 그리고 데이터 흐름을 직접 볼 수 있어 사용자들에게 편리한 환경을 제공하고 워크플로우를 저장하고 불러 올 수 있어 워크플로우의 관리도 편리합니다. 
 위에 언급된 스테이블 디퓨전은 ComfyUI에 있어 중요한 부분이므로 간략하게 알고 넘어가겠습니다. Stability AI(Emad Mostaque가 설립한 회사)에서 독일 뮌헨 대학교 Machine Vision & Learning Group (CompVis) 연구실의 "잠재 확산 모델을 이용한 고해상도 이미지 합성 연구"를 기반으로  Runway ML와 공동 개발한 것을 오픈소스 라이선스(CreativeML Open RAIL-M License)로 배포한 text-to-image 인공지능 모델입니다. 많은 이미지 생성 AI가 온라인으로 서비스를 제공(OpenAI의 Dall-e 2, 구글의 Imagen 등)하는데 반해, 스테이블 디퓨전은 개인 PC에서도 실행 가능하도록 컴퓨터 리소스 사용을 대폭 줄여 개발 되었습니다.   
