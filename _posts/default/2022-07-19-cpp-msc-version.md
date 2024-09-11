@@ -48,6 +48,7 @@ _MSC_VER는 버전의 주 번호 및 부 번호 요소를 변하지 않는 정�
 
 |표기|Visual Studio version|VC ++<br>version|_MSC_VER|_MSC_FULL_VER|   
 | :---: | :---: | :---: | :---: | :---: |   
+|2022 Update 11|Visual Studio 2022 version 17.11.3|14.41|1941|194134120|   
 |2022 Update 10|Visual Studio 2022 version 17.10.1|14.40|1940|194033811|   
 |2022 Update 9|Visual Studio 2022 version 17.9.6|14.39|1939|193933523|   
 |2022 Update 9|Visual Studio 2022 version 17.9.2|14.39|1939|193933521|   
