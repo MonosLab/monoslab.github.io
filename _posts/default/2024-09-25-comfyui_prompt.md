@@ -41,25 +41,25 @@ sitemap:
 
 ## 키워드   
 프롬프트를 작성할 때 문장으로 나열하기 보다는 핵심 키워드를 사용하여 간단하고 명료하게 작성하는 것이 스테이블 디퓨전 모델에서는 이해하기 쉬워 원하는 결과를 얻는데 더 효과적입니다.   
-예를 들면 <span style="color:yellow">girl passing by snack corner</span>라는 문장보다는 <span style="color:yellow">snack corner, girl, passing by</span>와 같이 키워드를 콤마(,)로 구분하여 표현하는 것이 더 좋습니다.   
+예를 들면 <span style="color:orange">girl passing by snack corner</span>라는 문장보다는 <span style="color:orange">snack corner, girl, passing by</span>와 같이 키워드를 콤마(,)로 구분하여 표현하는 것이 더 좋습니다.   
 프롬프트의 키워드 작성 순서는 이미지 생성에 영향을 미치지는 않습니다. 그렇지만 순서를 변경하면 처리 순서가 변경되어 생성되는 이미지도 바뀌게 됩니다. 어디에서 보면, 생성하고자 하는 이미지에서 가중치를 주어야하는 키워드는 앞부분에 배치하라고 권장하고 있습니다. 이는 더 많은 가중치가 부여되는 것이 아니라, 한 번에 처리 가능한 프롬프트의 수에는 제한 때문에 뒤에 가면 적용이 되지 않을 수 있기 때문에 오인한 것으로 판단이 됩니다.   
-예를 들면 <span style="color:yellow">snack corner, girl, passing by</span>와 <span style="color:yellow">girl, snack corner, passing by</span>는 다른 결과의 이미지를 얻습니다. snack corner를 가장 앞에 둔 프롬프트의 경우 전자의 girl과 후자의 girl은 동등한 가중치를 부여 받지만 위치에 따라 생성되는 이미지는 약간의 차이를 보입니다. 아래에서 설명할 대괄호나 괄호, 숫자 등의 표기법으로 가중치를 부여하지 않는 한은 생성에 참조하는 키워드 순서에 따라 처음 참조 키워드가 무엇이냐에 따라 가중치를 부여받는 듯한 인상을 줍니다.   
+예를 들면 <span style="color:orange">snack corner, girl, passing by</span>와 <span style="color:orange">girl, snack corner, passing by</span>는 다른 결과의 이미지를 얻습니다. snack corner를 가장 앞에 둔 프롬프트의 경우 전자의 girl과 후자의 girl은 동등한 가중치를 부여 받지만 위치에 따라 생성되는 이미지는 약간의 차이를 보입니다. 아래에서 설명할 대괄호나 괄호, 숫자 등의 표기법으로 가중치를 부여하지 않는 한은 생성에 참조하는 키워드 순서에 따라 처음 참조 키워드가 무엇이냐에 따라 가중치를 부여받는 듯한 인상을 줍니다.   
 
 ## 괄호와 대괄호   
 Stable diffusion은 사용자가 생성하고자 하는 이미지에 최대한 가깝게 하기 위해 프롬프트를 세부적으로 조정할 수 있는 다양한 방법을 제공합니다. 특정 키워드를 여러번 반복적으로 사용하여 확률을 높여 가중치를 높여 줄 수는 있지만, 한정된 토큰과 불필요한 토큰 처리를 줄여주기 위해 아래에 제시된 몇가지 방법을 사용합니다. 그 중 하나가 괄호와 대괄호입니다. 특정 단어나 문장을 강조하고자 할 때는 괄호 기호((, ))를 사용합니다. 괄호가 있는 경우 더 가중치가 높게 적용되며, 괄호의 중첩이 많을 수록 더 가중치가 증가하게 됩니다.   
-예를 들면, <span style="color:yellow">snack corner, ((girl)), (beauty), passing by</span>와 같이 프롬프트를 작성하였다면, <span style="color:yellow">girl, beauty, snack corner, passing by</span>의 순서로 가중치가 부여됩니다. 아무 기호가 없는 것은 기본 가중치인 1.0의 가중치를 부여 받습니다. 이와 반대로 대괄호 기호([, ])는 감싸고 있는 해당 키워드의 가중치를 평균(1.0)보다 적게 부여합니다.   
-예를 들면, <span style="color:yellow">girl, [beauty], snack corner, [[passing by]]</span>와 같이 프롬프트를 작성하였다면, <span style="color:yellow">girl, snack corner, beauty, passing by</span>의 순서로 가중치를 부여 받습니다.   
+예를 들면, <span style="color:orange">snack corner, ((girl)), (beauty), passing by</span>와 같이 프롬프트를 작성하였다면, <span style="color:orange">girl, beauty, snack corner, passing by</span>의 순서로 가중치가 부여됩니다. 아무 기호가 없는 것은 기본 가중치인 1.0의 가중치를 부여 받습니다. 이와 반대로 대괄호 기호([, ])는 감싸고 있는 해당 키워드의 가중치를 평균(1.0)보다 적게 부여합니다.   
+예를 들면, <span style="color:orange">girl, [beauty], snack corner, [[passing by]]</span>와 같이 프롬프트를 작성하였다면, <span style="color:orange">girl, snack corner, beauty, passing by</span>의 순서로 가중치를 부여 받습니다.   
 > ()는 가중치를 높이고 싶을때,  []는 가중치를 낮추고 싶을때 사용합니다.   
 > 괄호와 대괄호는 각각 10%씩의 가중치를 증가/감소 시킵니다. 예를 들면 ((키워드))와 [[키워드]]는 각각 1.1 x 1.1 = 1.21과 0.9 x 0.9 = 0.81의 가중치를 얻습니다.   
    
 ## 중괄호   
 이미지를 생성할 때 중괄호({, })를 이용하여 랜덤하게 키워드를 선택하게 할 수도 있습니다.   
-예를 들면, <span style="color:yellow">{girl|boy}, snack corner, passing by</span>와 같이 프롬프트를 작성하였다면, girl 또는 boy는 Queue에서 랜덤하게 선택하게 됩니다. 즉, 스낵 코너를 지나는 소년 또는 소녀의 이미지가 랜덤하게 생성될 것입니다.   
+예를 들면, <span style="color:orange">{girl|boy}, snack corner, passing by</span>와 같이 프롬프트를 작성하였다면, girl 또는 boy는 Queue에서 랜덤하게 선택하게 됩니다. 즉, 스낵 코너를 지나는 소년 또는 소녀의 이미지가 랜덤하게 생성될 것입니다.   
 
 ## 직접 가중치 부여   
 위의 괄호나 대괄호처럼 상대적으로 가중치를 부여할 수도 있으나, 사용자가 직접 가중치를 부여할 수도 있습니다.   
-예를 들면, <span style="color:yellow">snack corner, (girl:1.1), (beauty:0.5), passing by(1.2)</span>라 프롬프트를 작성하였다면, <span style="color:yellow">passing by, girl, snack corner, beauty</span>의 순으로 가중치를 부여 받지만, beauty의 속성은 적용되지 않을 확률이 높습니다. 또 다른 가중치에 가중치를 부여하는 다른 예를 살펴 보겠습니다.   
-<span style="color:yellow">snack corner, (girl:1.1), ((beauty:1.0): 1.3), passing by</span>로 프롬프트를 작성하면, <span style="color:yellow">beauty, girl, snack corner, passing by</span>의 순서로 높은 가중치가 부여 됩니다. beauty의 경우 1.0 x 1.3 = 1.3의 가중치를 부여 받기 때문에 girl의 1.1보다 더 높은 가중치를 부여 받습니다.   
+예를 들면, <span style="color:orange">snack corner, (girl:1.1), (beauty:0.5), passing by(1.2)</span>라 프롬프트를 작성하였다면, <span style="color:orange">passing by, girl, snack corner, beauty</span>의 순으로 가중치를 부여 받지만, beauty의 속성은 적용되지 않을 확률이 높습니다. 또 다른 가중치에 가중치를 부여하는 다른 예를 살펴 보겠습니다.   
+<span style="color:orange">snack corner, (girl:1.1), ((beauty:1.0): 1.3), passing by</span>로 프롬프트를 작성하면, <span style="color:orange">beauty, girl, snack corner, passing by</span>의 순서로 높은 가중치가 부여 됩니다. beauty의 경우 1.0 x 1.3 = 1.3의 가중치를 부여 받기 때문에 girl의 1.1보다 더 높은 가중치를 부여 받습니다.   
 > ComfyUI에서는 단축키로도 가중치를 증/감시킬 수 있습니다. Ctrl + Up키, Ctrl + Down 키를 사용하여 편리하게 사용할 수도 있습니다.   
 
 ## AND 연산   
