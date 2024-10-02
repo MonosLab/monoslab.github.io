@@ -27,15 +27,15 @@ Github 저장소(https://github.com/comfyanonymous/ComfyUI#windows)으로 이동
 모델들은 CIVITAI 나 huggingface 또는 github 등에서 구하셔서 ComfyUI_windows_portable\\ComfyUI\\models에 있는 적절한 폴더에 넣어주시기만 하면 됩니다. 예를 들어 checkpoints 모델을 다운 받으셨다면, ComfyUI_windows_portable\\ComfyUI\\models\\checkpoints 폴더에 넣어 주시기만 하면 됩니다.  아래는 제가 자주 사용하는 기본 모델들의 다운로드 목록입니다.   
 ## checkpoints   
 * ComfyUI_windows_portable\\ComfyUI\\models\\checkpoints 폴더에 저장   
-✅ SDXL1.0 base 모델        sdXL_v10VAEFix.safetensors (https://civitai.com/api/download/models/128078)
-✅ SDXL1.0 refiner 모델     sdXL_v10RefinerVAEFix.safetensors (https://civitai.com/api/download/models/128080)
-✅ 실사모델                     majicMIX realistic (https://civitai.com/models/43331/majicmix-realistic)
-✅ 그림모델                     anything (https://civitai.com/models/66/anything-v3)
+✅ SDXL1.0 base 모델        sdXL_v10VAEFix.safetensors (https://civitai.com/api/download/models/128078)   
+✅ SDXL1.0 refiner 모델     sdXL_v10RefinerVAEFix.safetensors (https://civitai.com/api/download/models/128080)   
+✅ 실사모델                     majicMIX realistic (https://civitai.com/models/43331/majicmix-realistic)   
+✅ 그림모델                     anything (https://civitai.com/models/66/anything-v3)   
 
 ## vae   
 * ComfyUI_windows_portable\\ComfyUI\\models\\vae 폴더에 저장   
-✅ 실사VAE                     vae-ft-mse-840000-ema (https://huggingface.co/stabilityai/sd-vae-ft-mse-original/tree/main)
-✅ 그림VAE                     KI-f8-anime (https://civitai.com/models/118561/anything-kl-f8-anime2-vae-ft-mse-840000-ema-pruned-blessed-clearvae-fp16cleaned)
+✅ 실사VAE                     vae-ft-mse-840000-ema (https://huggingface.co/stabilityai/sd-vae-ft-mse-original/tree/main)   
+✅ 그림VAE                     KI-f8-anime (https://civitai.com/models/118561/anything-kl-f8-anime2-vae-ft-mse-840000-ema-pruned-blessed-clearvae-fp16cleaned)   
 
 # 기존 모델 사용하기   
 ComfyUI_windows_portable\ComfyUI로 이동하면 extra_model_paths.yaml.example 파일이 있습니다. 편집기를 이용하여 오픈하시고 AUTOMATIC1111의 모델이 있는 곳의 위치를 설정하신 후 extra_model_paths.yaml로 새 이름으로 저장하시면 됩니다. 
