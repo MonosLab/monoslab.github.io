@@ -24,8 +24,8 @@ sitemap:
 <span style="color:blue">CuiBox</span>는 윈도우(Windows) 환경 하에서 ComfyUI를 좀 더 편리하게 사용하기 위해 만들고 있는 프로그램입니다. 최근에 ComfyUI에서 일렉트론을 이용한 Desktop App을 출시하고 있는 것으로 알고 있습니다. 하지만 방향이 약간 다른 관계로 CuiBox 프로젝트는 계속 진행하려고 합니다. 그럼 CuiBox에 대해 간단하게 살펴 보겠습니다.   
 
 # 설치 방법
-1. https://github.com/comfyanonymous/ComfyUI/releases 에서 최근 버전의 ComfyUI_windows_portable_nvidia.7z 파일을 다운로드 합니다.   
-2. https://github.com/MonosLab/CuiBox 에서 Code > Download Zip을 클릭하여 다운로드 합니다.   
+1. [https://github.com/comfyanonymous/ComfyUI/releases](https://github.com/comfyanonymous/ComfyUI/releases){:target="_blank"}에서 최근 버전의 ComfyUI_windows_portable_nvidia.7z 파일을 다운로드 합니다.   
+2. [https://github.com/MonosLab/CuiBox](https://github.com/MonosLab/CuiBox){:target="_blank"}에서 Code > Download Zip을 클릭하여 다운로드 합니다.   
 3. ComfyUI_windows_portable_nvidia.7z 파일을 적당한 위치에 압축 해제 합니다.   
 4. CuiBox에서 다운로드한 zip 파일을 압축 해제 후 ComfyUI_windows_portable 폴더 아래에 붙여 넣습니다.
 5. CuiBox.exe 파일을 실행합니다.   
@@ -61,3 +61,4 @@ sitemap:
 
 # 마무리   
 아직은 계속 개발을 진행하여 가는 과정이므로, 향후에는 어떠한 모습으로 변하게 될지는 모르지만 윈도우즈(Windows)에서 ComfyUI를 사용하는데 있어서 편리하게 이용할 수 있도록 기능들을 추가해 나가겠습니다.    
+
