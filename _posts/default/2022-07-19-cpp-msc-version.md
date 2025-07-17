@@ -48,6 +48,7 @@ _MSC_VER는 버전의 주 번호 및 부 번호 요소를 변하지 않는 정�
 
 |표기|Visual Studio version|VC ++<br>version|_MSC_VER|_MSC_FULL_VER|   
 | :---: | :---: | :---: | :---: | :---: |   
+|2022 Update 14|Visual Studio 2022 version 17.14.9|14.44|1944|194435213|   
 |2022 Update 13|Visual Studio 2022 version 17.13.0|14.43|1943|194334808|   
 |2022 Update 12|Visual Studio 2022 version 17.12.4|14.42|1942|194234433|   
 |2022 Update 11|Visual Studio 2022 version 17.11.6|14.41|1941|194134123|   
@@ -66,7 +67,7 @@ _MSC_VER는 버전의 주 번호 및 부 번호 요소를 변하지 않는 정�
 |2022 Update 1|Visual Studio 2022 version 17.1.0|14.31|1931||   
 |2022|Visual Studio 2022 version 17.0.2|14.30|1930|193030706|   
 |2022|Visual Studio 2022 version 17.0.1|14.30|1930|193030705|   
-|2019 Update 11|Visual Studio 2019 version 16.11.42|14.29|1929|192930157|   
+|2019 Update 11|Visual Studio 2019 version 16.11.49|14.29|1929|192930159|   
 |2019 Update 11|Visual Studio 2019 version 16.11.34|14.29|1929|192930154|   
 |2019 Update 11|Visual Studio 2019 version 16.11.27|14.29|1929|192930151|   
 |2019 Update 11|Visual Studio 2019 version 16.11.24|14.29|1929|192930148|   
@@ -82,6 +83,7 @@ _MSC_VER는 버전의 주 번호 및 부 번호 요소를 변하지 않는 정�
 |2019 Update 2|Visual Studio 2019 version 16.2.3|14.22|1922|192227905|   
 |2019 Update 1|Visual Studio 2019 version 16.1.2|14.21|1921|192127702|   
 |2019|Visual Studio 2019 version 16.0.0|14.20|1920|192027508|   
+|2017 Update 9|Visual Studio 2017 version 15.9.75|14.16|1916|191627054|   
 |2017 Update 9|Visual Studio 2017 version 15.9.60|14.16|1916|191627051|   
 |2017 Update 9|Visual Studio 2017 version 15.9.11|14.16|1916|191627030|   
 |2017 Update 9|Visual Studio 2017 version 15.9.7|14.16|1916|191627027|   
